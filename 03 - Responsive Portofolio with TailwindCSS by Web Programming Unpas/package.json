@@ -1,0 +1,19 @@
+{
+  "name": "03---responsive-portofolio-with-tailwindcss-by-web-programming-unpas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "regidgo" : "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "remixicon": "^4.2.0"
+  }
+}

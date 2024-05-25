@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'remixicon/fonts/remixicon.css';
+
+
+.navbar-fixed{
+
+    box-shadow: 0 2px 8px hsla(19, 64%,24%, .1);
+}
+
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45 ;
+}
+
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+
+.hamburger-transition{
+    @apply transition duration-300 ease-in-out;
+}
+
+.mobile-navbar{
+    @apply font-deca font-bold text-2xl text-primary  m-5;
+
+}
+
+.porto-title{
+    @apply font-semibold text-dark text-xl mt-3 mb-3 font-deca;
+}
+
+.porto-part {
+    @apply rounded-lg shadow-md overflow-hidden;
+
+}
+
+.porto-p{
+@apply    font-medium text-base text-secondary font-deca;
+
+}
