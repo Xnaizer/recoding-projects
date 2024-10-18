@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'remixicon/fonts/remixicon.css';
+html,
+body {
+  @apply m-0;
+  @apply p-0;
+  @apply overflow-x-hidden;
+  @apply scroll-smooth;
+
+}
+
+
+
+.bg-Headerbg {
+    @apply bg-slate-200;
+    box-shadow: 0 2px 8px hsla(19, 64%,24%, .1);
+    @apply duration-1000
+}
+
+#typedText {
+     
+}
+#volunteerCount {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+dd {
+  max-height: 0; /* Set initial height to 0 when hidden */
+  overflow: hidden; /* Hide overflowing content */
+  transition: max-height 0.4s ease, padding 0.4s ease; /* Smooth transition for height and padding */
+  padding: 0; /* Remove padding when hidden */
+}
+
+dd.open {
+  max-height: 200px; /* Adjust to suitable height for content when open */
+  padding: 1rem 0; /* Add padding when the dd is open */
+}
+
+i {
+  transition: transform 0.3s ease; /* Smooth rotation for the icon */
+}
+
+i.-rotate-180 {
+  transform: rotate(180deg); /* Rotate icon when faq is opened */
+}
+
+.active-link{
+  @apply text-blue-400
+}
+
+.hidden1{
+  display : none;
+}
+
+
+
+
