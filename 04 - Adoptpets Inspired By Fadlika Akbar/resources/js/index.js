@@ -113,20 +113,39 @@ window.addEventListener('scroll', scrollActive);
 
 const searchButton = document.getElementById("search-button");
 const searchInputContainer = document.getElementById("search-input-container");
+const whenSearchgone = document.querySelectorAll(".guajugaheran");
 
 searchButton.addEventListener("click", function() {
     if (searchInputContainer.classList.contains("hidden")) {
+        // Menampilkan search input
         searchInputContainer.classList.remove("hidden");
+        
         setTimeout(() => {
             searchInputContainer.classList.remove("opacity-0");
-        }, 10); // Sedikit penundaan untuk memastikan animasi bekerja
+        }, 10);
+        
+        // Menyembunyikan elemen-elemen dengan kelas guajugaheran
+        whenSearchgone.forEach(element => {
+            element.classList.add("hidden");
+        });
     } else {
+        // Menyembunyikan search input
         searchInputContainer.classList.add("opacity-0");
+        
         setTimeout(() => {
             searchInputContainer.classList.add("hidden");
-        }, 300); // Waktu ini disesuaikan dengan 'duration-300'
+        }, 300); // Waktu sesuai dengan 'duration-300'
+
+        // Menampilkan kembali elemen-elemen dengan kelas guajugaheran dengan delay 300ms
+        setTimeout(() => {
+            whenSearchgone.forEach(element => {
+                element.classList.remove("hidden");
+            });
+        }, 300); // Delay 300ms untuk kemunculan kembali elemen guajugaheran
     }
 });
+
+
 
 function animateValue(id, start, end, duration) {
 let element = document.getElementById(id);
@@ -189,3 +208,26 @@ navLinks.forEach(link => {
 
 
 
+const scrollUpButton = document.getElementById("scrollUp");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 175) {
+    // Menampilkan tombol "scroll up" dengan delay 300ms
+    scrollUpButton.classList.remove("hidden", "opacity-0");
+    scrollUpButton.classList.add("opacity-100", "delay-300");
+  } else {
+    // Menyembunyikan tombol "scroll up" tanpa delay
+    scrollUpButton.classList.add("opacity-0");
+    scrollUpButton.classList.remove("opacity-100", "delay-300");
+    
+    setTimeout(() => {
+      scrollUpButton.classList.add("hidden");
+    }, 300); // Waktu sesuai dengan `duration-300`
+  }
+});
+
+// Smooth scroll saat tombol diklik
+scrollUpButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

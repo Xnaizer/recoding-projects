@@ -27,7 +27,7 @@
             <nav class="bg-linearBlue/75 p-5 xl:px-7 w-full fixed z-50  " id="navbar" style="transition: background-color 0.3s ease-in-out; ">
                 <div class="flex container justify-between mx-auto items-center">
                 <div class="flex items-center gap-20 lg:gap-10 xl:gap-20">
-                    <div class="flex gap-2 items-center hover:text-slate-200">
+                <div class="flex gap-2 items-center hover:text-slate-200">
                         <a href="#sec-header" class="flex gap-2 items-center  duration-300 ">
                             <img src="./resources/assets/img/doublepaw.png" alt="double-paw" class="w-12  duration-300 ">
                             <h1 class="font-Sawa text-xl: text-paleBlue font-bold hover:text-slate-700   ">AdoptPets</h1>
@@ -35,7 +35,8 @@
                     
                     </div>
                     <ul class="hidden lg:flex gap-10 xl:gap-12 lg:mt-[2px]">
-                    <li><a href="#sec-home" class="text-secondGray font-medium font-Sawa duration-300 ease-in-out hover:text-paleBlue hover:text-slate-700 ">Home</a></li>
+                    
+                      <li><a href="#sec-home" class="text-secondGray font-medium font-Sawa duration-300 ease-in-out hover:text-paleBlue hover:text-slate-700 ">Home</a></li>
                     
                     <li><a href="#sec-community" class="text-secondGray font-medium font-Sawa duration-300 ease-in-out hover:text-paleBlue hover:text-slate-700 ">Community</a></li>
                     <li class="relative cursor-pointer">
@@ -54,23 +55,23 @@
                 
                 
 
-                <div class="relative z-50">
+                <div class="relative z-50 ">
                     <ul class="lg:flex hidden mt-[2px] items-center gap-7 xl:gap-9">
                       <div class="cursor-pointer active:scale-[.90] transition duration-300 ease-in-out" id="search-button">
                         <i class="ri-search-line text-2xl "></i>
                         
                     </div>
-                    <div id="search-input-container" class="hidden opacity-0 transition-all duration-300 ease-in-out lg:w-1/2 md:w-1/2">
-                      <input type="text" class="rounded-lg xl:pr-32 p-1 md:pr-2  " placeholder=" Search ">
+                    <div id="search-input-container" class="hidden opacity-0 transition-all duration-300 ease-in-out lg:w-1/2 md:w-32">
+                      <input type="text" class="rounded-lg xl:pr-32 p-1 md:pr-2 md:w-56  " placeholder=" Search">
                     </div>
 
 
 
                     
-                    <li class="active:scale-[.90] transition duration-300 ease-in-out">
-                        <a href="./signin.htm" class="font-medium block font-Sawa text-center text-paleBlue hover:text-slate-700  ">Sign in</a>
+                    <li class="active:scale-[.90] transition duration-300 ease-in-out hid" class="guajugaheran">
+                        <a href="./signin.htm" class="font-medium block font-Sawa text-center text-paleBlue hover:text-slate-700   guajugaheran">Sign in</a>
                     </li>
-                    <a href="./signup.htm" class="px-7 py-2 rounded-md bg-slate-700 font-medium text-white bg-paleBlue active:scale-[.90] transition duration-300 ease-in-out hover:bg-slate-800 hover:text-slate-100 ">Sign up</a>
+                    <a href="./signup.htm" class="px-7 py-2 rounded-md bg-slate-700 font-medium text-white bg-paleBlue active:scale-[.90] transition duration-300 ease-in-out hover:bg-slate-800 hover:text-slate-100 guajugaheran" >Sign up</a>
                     </ul>
 
                     <button class="block lg:hidden focus:outline-none">
@@ -82,12 +83,12 @@
 
                   
 
-                  <div id="search-input-container" class="  transition-all duration-300 ease-in-out justify-center items-center">
-                    
-                    <input type="text" class="rounded-lg pr-32 p-1 pl-4" placeholder=" Search in AdoptPets ">
-                    
-                  </div>
-
+                  <li class="text-center">
+                    <input type="text" class="rounded-lg w-96 p-2 pl-2 pr-4 left-2" placeholder=" Search in AdoptPets ">
+                  </li>
+                  <li class="text-center">
+                    <a href="./signup.htm" class="text-white bg-paleBlue rounded-md font-Sawa md:py-2 px-8 md:px-20 xs:px-12 py-2 font-medium bg-slate-700">Search</a>
+                </li>
 
                   <li><a href="#sec-home" class="text-colorNav font-medium md:text-lg">Home</a></li>
                   <li><a href="#sec-community" class="text-colorNav font-medium md:text-lg">Community</a></li>
@@ -129,7 +130,7 @@
                           <p class="uppercase font-Sawa font-bold text-paleBlue text-sm md:text-base mb-3" id="paragraph-hero" style="opacity: 1;">
                               FOLLOW OUR SOCIAL MEDIA:
                           </p>
-                          <div class="w-full px-4">
+                          <div class="w-full px-4 pt-1">
                               <div class="flex items-center mt-4">
                                   <a href="#sec-home" target="_blank" class="w-10 h-10 rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-red-500 lg:w-14 lg:h-14">
                                       <i class="ri-youtube-fill text-2xl fill-current lg:text-4xl"></i>
@@ -138,10 +139,13 @@
                                       <i class="ri-instagram-fill text-2xl fill-current lg:text-4xl"></i>
                                   </a>
                                   <a href="#sec-home" target="_blank" class="w-10 h-10 rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-blue-600 lg:w-14 lg:h-14">
-                                      <i class="ri-linkedin-box-fill text-2xl fill-current lg:text-4xl"></i>
+                                      <i class="ri-linkedin-box-fill text-2xl     fill-current lg:text-4xl"></i>
                                   </a>
-                                  <a href="#sec-home" target="_blank" class="w-10 h-10 rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-orange-500 lg:w-14 lg:h-14">
-                                      <i class="ri-github-fill text-2xl fill-current lg:text-4xl"></i>
+                                  <a href="#sec-home" target="_blank" class="w-10 h-10 rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white   lg:w-14 lg:h-14 hover:text-green-400">
+                                    <i class="ri-line-fill text-2xl fill-current lg:text-4xl"></i>
+                                  </a>
+
+                                  <a href="#sec-home" target="_blank" class="w-10 h-10  rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-green-600 lg:w-14 lg:h-14"><i class="ri-whatsapp-fill text-2xl fill-current lg:text-4xl"></i>
                                   </a>
                               </div>  
                           </div>
@@ -394,12 +398,16 @@
       
                               <a href="#sec-home" target="_blank" class="w-10 h-10  rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-blue-600 lg:w-14 lg:h-14"><i class="ri-linkedin-box-fill text-2xl fill-current lg:text-4xl"></i></a>
       
-                              <a href="#sec-home" target="_blank" class="w-10 h-10  rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-orange-500 lg:w-14 lg:h-14"><i class="ri-github-fill text-2xl fill-current lg:text-4xl"></i></a>
+                              <a href="#sec-home" target="_blank" class="w-10 h-10  rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-green-400 lg:w-14 lg:h-14"><i class="ri-line-fill text-2xl fill-current lg:text-4xl"></i>
+                              </a>
+
+                              <a href="#sec-home" target="_blank" class="w-10 h-10  rounded-full mr-3 flex justify-center items-center text-slate-500 border border-slate-300 hover:border-primary hover:bg-white hover:text-green-600 lg:w-14 lg:h-14"><i class="ri-whatsapp-fill text-2xl fill-current lg:text-4xl"></i>
+                              </a>
                           </div>  
                           <!-- <p class="mt-12 text-xl font-bold"><i class="ri-customer-service-fill"></i> Call Us : +(62) 813 4245 9204 | adoptpets.business@gmail.com </p> -->
                       </div>
-                      <h2 class="font-Inter font-bold text-slate-700 text-3xl mb-2 mt-12 lg:text-3xl">SPECIAL THANKS TO OUR PARTNERSHIPS</h2>
-                        <p class="porto-p lg:text-xl">Capturing all the Companies I have collaborated with. NOT YET.</p>
+                      <h2 class="font-Inter font-bold text-slate-700 text-3xl mb-4 mt-12 lg:text-3xl">SPECIAL THANKS TO OUR PARTNERSHIPS</h2>
+                        <p class="porto-p lg:text-xl">Thank You For Trusting AdoptPets.</p>
                   </div>
               </div>
       
@@ -484,7 +492,14 @@
         
   </div>
 
+  <!-- <a href="#" class="scrollup fixed right-5 bottom-5 bg-slate-500 p-1 text-lg text-white rounded">
+    <i class="ri-arrow-up-line md:text-xl md:p-1 sm:text-lg xl:text-2xl xl:p-2 "></i>
+  </a> -->
 
+  <a href="#" class="scrollup fixed right-5 bottom-5 bg-slate-500 p-1 text-lg text-white rounded opacity-0 transition-opacity duration-500 delay-300 md:text-xl md:p-1 sm:text-lg xl:text-2xl xl:p-2" id="scrollUp">
+    <i class="ri-arrow-up-line text-xl"></i>
+  </a>
+  
 
 
 
