@@ -231,3 +231,33 @@ scrollUpButton.addEventListener("click", (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const sr = ScrollReveal({
+    origin : 'top',
+    distance : '60px',
+    duration : 2500,
+    delay : 400,
+    // reset : true, // animasi berulang
+});
+
+sr.reveal('#img-hero', {origin: 'bottom'});
+sr.reveal('#img-text', {origin: 'top'});
+sr.reveal('#sec-support', {origin: 'top'});
+
+sr.reveal('#mission-paragraph, #mission-img ', {origin: 'left'});
+sr.reveal('#mission-title, #mission-community ', {origin: 'right'});
+
+
+sr.reveal('#petlist-title ', {origin: 'right'});
+sr.reveal('#adoptpets-filter', {origin: 'left'});
+
+sr.reveal('#petlist-img, #petlist-detail', {origin: 'bottom'});
+
+sr.reveal('#accordion-title', {origin: 'top'});
+sr.reveal('#accordions', {origin: 'bottom'});
+
+// mission-paragraph mission-title mission-img mission-community
+// petlist-title adoptpets-filter petlist-img petlist-detail
+// accordion-title accordions
+
+
