@@ -1,0 +1,26 @@
+/* SponsorHighlightMoving.css */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Sesuaikan durasi animasi berdasarkan ukuran layar */
+@media (min-width: 1024px) { /* lg */
+    .animate-marquee {
+        animation-duration: 40s; /* Lebih cepat pada layar besar */
+    }
+}
