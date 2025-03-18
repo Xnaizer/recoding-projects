@@ -48,6 +48,8 @@ function FAQSections() {
         },
     ];
 
+
+
     // Fungsi untuk menangani toggle FAQ
     const toggleFAQ = (id) => {
         if (openFAQ === id) {
@@ -56,6 +58,8 @@ function FAQSections() {
             setOpenFAQ(id); // Buka FAQ yang dipilih
         }
     };
+
+    
 
     return (
         <section id="sec-faq">
