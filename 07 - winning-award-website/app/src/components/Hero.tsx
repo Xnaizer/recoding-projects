@@ -35,10 +35,10 @@ const Hero:React.FC = () => {
     }
 
     useEffect(() => {
-        if(loadedVideos === totalVideos -1) {
+        if(loadedVideos === totalVideos - 1) {
             setIsLoading(false);
         }
-    },[loadedVideos])
+    },[loadedVideos]);
 
     useGSAP(() => {
     if (hasClicked) {
@@ -71,7 +71,7 @@ const Hero:React.FC = () => {
         '#next-video',
         { scale: 1, opacity: 1 },
         {
-            scale: 1.2,          // sedikit lebih besar untuk nutup seluruh layar
+            scale: 1.2,         
             opacity: 1,
             duration: 0.6,
             ease: 'power2.inOut',
@@ -106,7 +106,7 @@ const Hero:React.FC = () => {
     })
 
     return (
-        <div className="relative h-dvh w-screen overflow-x-hidden  ">
+        <div id="nexus" className="relative h-dvh w-screen overflow-x-hidden  ">
             {isLoading && (
                 <div className="flex-center absolute z-100 h-dvh w-screen overflow-hidden bg-violet-50">
                     <div className="three-body">
@@ -116,8 +116,10 @@ const Hero:React.FC = () => {
                     </div>
                 </div>
             )}
-
-            <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75 duration-300 transition-all">
+                 <h1 className="special-font hero-heading text-black absolute top-24 left-10 ">
+                    redefi<b>n</b><b>e</b>
+                </h1>
+            <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden  bg-blue-75 duration-300 transition-all">
                 <div>
                     <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
                         <div 
@@ -139,20 +141,20 @@ const Hero:React.FC = () => {
                     </div>
 
                     <video
-                    ref={nextVdRef}
-                    src={getVdSrc(currentIndex)}
-                    loop
-                    muted
-                    id="next-video"
-                    className="
-                        absolute left-1/2 top-1/2 z-20
-                        w-[102vw] h-[102vh]
-                        -translate-x-1/2 -translate-y-1/2
-                        object-cover object-center
-                        opacity-0
-                        will-change-transform rounded-2xl
-                    "
-                    onLoadedData={handleVdLoad}
+                        ref={nextVdRef}
+                        src={getVdSrc(currentIndex)}
+                        loop
+                        muted
+                        id="next-video"
+                        className="
+                            absolute left-1/2 top-1/2 z-20
+                            w-[102vw] h-[102vh]
+                            -translate-x-1/2 -translate-y-1/2
+                            object-cover object-center
+                            opacity-0
+                            will-change-transform rounded-2xl
+                        "
+                        onLoadedData={handleVdLoad}
                     />
 
                     <video
