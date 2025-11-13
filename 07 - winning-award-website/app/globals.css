@@ -163,6 +163,21 @@
     @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
+  
+
+  /* .story-img-container {
+  @apply relative w-full h-[80vh] md:h-[90vh] flex justify-center items-center overflow-hidden;
+  filter: url("#flt_tag");
+}
+
+.story-img-mask {
+  @apply relative w-[90%] md:w-[70%] h-full overflow-hidden;
+  clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+}
+
+.story-img-content {
+  @apply relative w-full h-full flex justify-center items-center;
+  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1); */
 
   /* --- Gallery Section --- */
   .gallery-img-container {

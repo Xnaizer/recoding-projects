@@ -69,12 +69,12 @@ const Navbar: React.FC = () => {
             <header className="absolute top-1/2 w-full -translate-y-1/2 px-4">
                 <nav className="flex size-full items-center justify-between p-4">
                     <div className="flex items-center gap-7">
-                        <Image 
+                        {/* <Image 
                             src='/img/logo.png'
                             alt="logo navbar"
                             width={50}
                             height={50}
-                        />
+                        /> */}
 
                         <Button 
                             id="product-button"

@@ -3,6 +3,9 @@ import Hero from './src/components/Hero'
 import About from './src/components/About';
 import Navbar from './src/components/Navbar';
 import Features from './src/components/Features';
+import Story from './src/components/Story';
+import Footer from './src/components/Footer';
+import Contact from './src/components/Contact';
 
 const Home:React.FC = () => {
   return (
@@ -11,7 +14,9 @@ const Home:React.FC = () => {
       <Hero />
       <About/>
       <Features />
-      <section className='min-h-screen bg-black' />
+      <Story />
+      <Contact />
+      <Footer />
     </main>
   )
 }
